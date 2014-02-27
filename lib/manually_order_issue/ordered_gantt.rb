@@ -1,19 +1,21 @@
-module Redmine::Helpers
+module ManuallyOrderIssue
   module OrderedGantt
     def self.included( base )
       def base.sort_issue_logic(issue)
         julian_date = Date.new()
         ancesters_start_date = []
         current_issue = issue
-        puts "*" * 50
-        puts issue.ordering
-        puts "*" * 50
+
         begin
           ancesters_start_date.unshift([
-            -(current_issue.start_date || julian_date).to_time.to_i * (issue.ordering + 1),
+            -current_issue.ordering,
             current_issue.id])
           current_issue = current_issue.parent
         end while (current_issue)
+        puts "*" * 50
+        p ancesters_start_date
+        puts "*" * 50
+
         ancesters_start_date
       end
     end

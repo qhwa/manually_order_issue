@@ -13,8 +13,8 @@ Redmine::Plugin.register :manually_order_issue do
   author_url 'https://github.com/qhwa/redmine_manually_ordering_issues'
 end
 
-require_relative 'app/models/orderable'
-require_relative 'lib/redmine/helpers/ordered_gantt'
+require_relative 'lib/manually_order_issue/ordered_gantt'
+require_relative 'lib/manually_order_issue/orderable_issue'
 
-Issue.send :include, Orderable
-Redmine::Helpers::Gantt.send :include, Redmine::Helpers::OrderedGantt
+Issue.send :include, ManuallyOrderIssue::OrderableIssue
+Redmine::Helpers::Gantt.send :include, ManuallyOrderIssue::OrderedGantt

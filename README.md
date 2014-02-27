@@ -4,6 +4,6 @@
 
 ~~~sh
 cd <redmine_path>/plugins
-git clone https://github.com/qhwa/manually-order-issue.git
+git clone https://github.com/qhwa/manually_order_issue.git
 rake redmine:plugins:migrate
 ~~~
