@@ -1,0 +1,5 @@
+# Chinese (China) translations for Ruby on Rails
+# by tsechingho (http://github.com/tsechingho)
+zh:
+  ordering: 排序
+  field_ordering: 排序（数字越大越靠前）

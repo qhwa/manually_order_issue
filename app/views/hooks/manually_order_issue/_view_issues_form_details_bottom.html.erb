@@ -1,0 +1,7 @@
+<% if issue.safe_attribute? 'ordering' %>
+<p>
+    <%= form.label_for_field :ordering %>
+    <%= form.text_field :ordering %>
+</p>
+<% end %>
+
