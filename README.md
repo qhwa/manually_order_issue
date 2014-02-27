@@ -1,4 +1,4 @@
-# A plugin for redmine, makes issues orderable by user
+# A plugin for redmine, makes issues orderable for user
 
 ## install
 
