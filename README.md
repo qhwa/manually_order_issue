@@ -10,6 +10,6 @@ rake redmine:plugins:migrate
 
 This plugin allows you to assign an ordering field for issues:
 
-![form](http://gtms02.alicdn.com/tps/i2/T1A1GLFzdbXXXsAinc-559-429.jpg)
+![form](http://gtms01.alicdn.com/tps/i1/T11fmMFuJbXXcX7EP1-592-188.jpg)
 
 The higher value it has, the toper location the issue will appear.
