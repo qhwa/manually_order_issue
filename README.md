@@ -1,3 +1,9 @@
-= manually_order_issue
+# A plugin for redmine, makes issues orderable by user
 
-Description goes here
+## install
+
+~~~sh
+cd <redmine_path>/plugins
+git clone https://github.com/qhwa/manually-order-issue.git
+rake redmine:plugins:migrate
+~~~
