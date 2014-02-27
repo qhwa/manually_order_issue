@@ -12,9 +12,6 @@ module ManuallyOrderIssue
             current_issue.id])
           current_issue = current_issue.parent
         end while (current_issue)
-        puts "*" * 50
-        p ancesters_start_date
-        puts "*" * 50
 
         ancesters_start_date
       end
